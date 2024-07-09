@@ -10,7 +10,7 @@ def test_failure_create_user():
     assert response['status'] == 500
     assert response['msg'] == 'server_error'
 
-def test_update_user(element='user_id',update_value=2):
+def test_update_user():
     user = update_user('name', 'rohit')
     assert user['name'] == 'rohit'
 
