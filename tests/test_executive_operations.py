@@ -16,7 +16,7 @@ def test_failuer_progress_report_stats():
     assert result['status'] =='type error: int expected'
     assert result['status_code'] == 500
 
-def test_growth_calculator(previous_year=2, current_year=4):
+def test_growth_calculator():
     result = growth_calculator(150,200)
     s= 50/150
     assert result == s*100
